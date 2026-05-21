@@ -1,0 +1,12 @@
+{
+  "tabConfigs": [
+    {
+      "code": "latamexpansion",
+      "name": "LatAm Expansion",
+      "listOrder": 0.91,
+      "texture": {
+        "base": "latamexpansion:item/food/vegetable/cornear"
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+    "code":  "grain",
+    "maxstacksize":  64,
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "corn",
+                                             "quinoa"
+                                         ]
+                          }
+                      ],
+    "shape":  {
+                  "base":  "game:item/resource/crushed/normal"
+              },
+    "texture":  {
+                    "base":  "block/food/grain/{type}-pile"
+                },
+    "behaviors":  [
+                      {
+                          "name":  "GroundStorable",
+                          "properties":  {
+                                             "layout":  "Quadrants",
+                                             "collisionBox":  {
+                                                                  "x1":  0,
+                                                                  "y1":  0,
+                                                                  "z1":  0,
+                                                                  "x2":  1,
+                                                                  "y2":  0.125,
+                                                                  "z2":  1
+                                                              }
+                                         }
+                      }
+                  ],
+    "creativeinventory":  {
+                              "general":  [
+                                              "*"
+                                          ],
+                              "items":  [
+                                            "*"
+                                        ],
+                              "latamexpansion":  [
+                                                     "*"
+                                                 ]
+                          },
+    "attributes":  {
+                       "inContainerTextureByType":  {
+                                                        "*-corn":  {
+                                                                       "base":  "latamexpansion:block/wood/barrel/raw-corn-grain"
+                                                                   },
+                                                        "*-quinoa":  {
+                                                                         "base":  "latamexpansion:block/wood/barrel/raw-quinoa-grain"
+                                                                     }
+                                                    },
+                       "foodTags":  [
+                                        "grain",
+                                        "{type}"
+                                    ],
+                       "nutritionPropsWhenInMeal":  {
+                                                        "satiety":  240,
+                                                        "foodcategory":  "Grain"
+                                                    },
+                       "displayable":  {
+                                           "shelf":  {
+                                                         "size":  {
+                                                                      "width":  5,
+                                                                      "height":  2,
+                                                                      "length":  5
+                                                                  }
+                                                     }
+                                       }
+                   },
+    "nutritionProps":  {
+                           "satiety":  60,
+                           "foodcategory":  "Grain"
+                       },
+    "transitionableProps":  [
+                                {
+                                    "type":  "Perish",
+                                    "freshHours":  {
+                                                       "avg":  2160
+                                                   },
+                                    "transitionHours":  {
+                                                            "avg":  224
+                                                        },
+                                    "transitionedStack":  {
+                                                              "type":  "item",
+                                                              "code":  "game:rot"
+                                                          },
+                                    "transitionRatio":  0.25
+                                }
+                            ],
+    "grindingProps":  {
+                          "groundStack":  {
+                                              "type":  "item",
+                                              "code":  "flour-{type}"
+                                          }
+                      },
+    "materialDensity":  600,
+    "guiTransform":  {
+                         "rotation":  {
+                                          "x":  171,
+                                          "y":  57,
+                                          "z":  -20
+                                      },
+                         "origin":  {
+                                        "x":  0.46,
+                                        "y":  0.11,
+                                        "z":  0.46
+                                    },
+                         "scale":  2.64
+                     },
+    "tpHandTransform":  {
+                            "translation":  {
+                                                "x":  -0.04,
+                                                "y":  -0.6,
+                                                "z":  -0.8
+                                            },
+                            "rotation":  {
+                                             "x":  119,
+                                             "y":  -7,
+                                             "z":  -72
+                                         },
+                            "origin":  {
+                                           "x":  -0.1,
+                                           "y":  0.32,
+                                           "z":  0.82
+                                       },
+                            "scale":  0.48
+                        },
+    "groundTransform":  {
+                            "translation":  {
+                                                "x":  0,
+                                                "y":  0,
+                                                "z":  0
+                                            },
+                            "rotation":  {
+                                             "x":  3,
+                                             "y":  1,
+                                             "z":  0
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0,
+                                           "z":  0.5
+                                       },
+                            "scale":  3
+                        },
+    "heldRightReadyAnimationByType":  {
+                                          "*":  "holdbothhands"
+                                      },
+    "heldTpIdleAnimationByType":  {
+                                      "*":  "holdbothhands"
+                                  }
+}

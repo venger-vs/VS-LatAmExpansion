@@ -1,0 +1,257 @@
+{
+    "code":  "pickledvegetable",
+    "maxstacksize":  64,
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "tomato",
+                                             "potato"
+                                         ]
+                          }
+                      ],
+    "shapebytype":  {
+                        "*-tomato":  {
+                                         "base":  "item/food/pickledvegetable/tomato"
+                                     },
+                        "*-potato":  {
+                                         "base":  "item/food/pickledvegetable/potato"
+                                     },
+                        "*":  {
+                                  "base":  "game:item/food/pickledvegetable/bellpepper"
+                              }
+                    },
+    "texture":  {
+                    "base":  "item/food/pickledvegetable/{type}"
+                },
+    "creativeinventory":  {
+                              "general":  [
+                                              "*"
+                                          ],
+                              "items":  [
+                                            "*"
+                                        ],
+                              "latamexpansion":  [
+                                                     "*"
+                                                 ]
+                          },
+    "attributes":  {
+                       "inContainerTextureByType":  {
+                                                        "*-tomato":  {
+                                                                         "base":  "latamexpansion:block/wood/barrel/pickled-tomato"
+                                                                     },
+                                                        "*-potato":  {
+                                                                         "base":  "latamexpansion:block/wood/barrel/pickled-potato"
+                                                                     },
+                                                        "*":  {
+                                                                  "base":  "latamexpansion:block/wood/barrel/pickled-{type}"
+                                                              }
+                                                    },
+                       "crockable":  true,
+                       "inPieProperties":  {
+                                               "texture":  "block/food/pie/fill-{type}",
+                                               "partType":  "Filling"
+                                           },
+                       "displayable":  {
+                                           "shelf":  {
+                                                         "size":  {
+                                                                      "width":  4,
+                                                                      "height":  3,
+                                                                      "length":  4
+                                                                  }
+                                                     }
+                                       }
+                   },
+    "nutritionProps":  {
+                           "satiety":  80,
+                           "foodcategory":  "Vegetable"
+                       },
+    "transitionableProps":  [
+                                {
+                                    "type":  "Perish",
+                                    "freshHours":  {
+                                                       "avg":  1800
+                                                   },
+                                    "transitionHours":  {
+                                                            "avg":  240
+                                                        },
+                                    "transitionedStack":  {
+                                                              "type":  "item",
+                                                              "code":  "game:rot"
+                                                          },
+                                    "transitionRatio":  0.5
+                                }
+                            ],
+    "materialDensity":  600,
+    "guiTransformByType":  {
+                               "*-tomato":  {
+                                                "translation":  {
+                                                                    "x":  0.6,
+                                                                    "y":  0.4,
+                                                                    "z":  0
+                                                                },
+                                                "rotation":  {
+                                                                 "x":  -37,
+                                                                 "y":  135,
+                                                                 "z":  -155
+                                                             },
+                                                "origin":  {
+                                                               "x":  0.5,
+                                                               "y":  0.18,
+                                                               "z":  0.5
+                                                           },
+                                                "scale":  2.55
+                                            },
+                               "*-potato":  {
+                                                "translation":  {
+                                                                    "x":  1.2,
+                                                                    "y":  1.8,
+                                                                    "z":  0
+                                                                },
+                                                "rotation":  {
+                                                                 "x":  180,
+                                                                 "y":  158,
+                                                                 "z":  38
+                                                             },
+                                                "origin":  {
+                                                               "x":  0.5,
+                                                               "y":  0.18,
+                                                               "z":  0.5
+                                                           },
+                                                "scale":  2.72
+                                            },
+                               "*":  {
+                                         "translation":  {
+                                                             "x":  0,
+                                                             "y":  0,
+                                                             "z":  0
+                                                         },
+                                         "rotation":  {
+                                                          "x":  -44,
+                                                          "y":  180,
+                                                          "z":  -173
+                                                      },
+                                         "origin":  {
+                                                        "x":  0.48,
+                                                        "y":  0.15,
+                                                        "z":  0.5
+                                                    },
+                                         "scale":  3
+                                     }
+                           },
+    "tpHandTransformByType":  {
+                                  "*-tomato":  {
+                                                   "translation":  {
+                                                                       "x":  -0.75,
+                                                                       "y":  -0.13,
+                                                                       "z":  -0.57
+                                                                   },
+                                                   "rotation":  {
+                                                                    "x":  0,
+                                                                    "y":  0,
+                                                                    "z":  -67
+                                                                },
+                                                   "origin":  {
+                                                                  "x":  0.5,
+                                                                  "y":  0.1,
+                                                                  "z":  0.5
+                                                              },
+                                                   "scale":  0.69
+                                               },
+                                  "*-potato":  {
+                                                   "translation":  {
+                                                                       "x":  -0.9,
+                                                                       "y":  -0.3,
+                                                                       "z":  -0.7
+                                                                   },
+                                                   "rotation":  {
+                                                                    "x":  0,
+                                                                    "y":  -21,
+                                                                    "z":  1
+                                                                },
+                                                   "scale":  0.69
+                                               },
+                                  "*":  {
+                                            "translation":  {
+                                                                "x":  -0.04,
+                                                                "y":  -1.1,
+                                                                "z":  -0.4
+                                                            },
+                                            "rotation":  {
+                                                             "x":  125,
+                                                             "y":  -7,
+                                                             "z":  -69
+                                                         },
+                                            "origin":  {
+                                                           "x":  -0.14,
+                                                           "y":  0.4,
+                                                           "z":  0.65
+                                                       },
+                                            "scale":  0.58
+                                        }
+                              },
+    "groundTransformByType":  {
+                                  "*-tomato":  {
+                                                   "translation":  {
+                                                                       "x":  0,
+                                                                       "y":  0.045,
+                                                                       "z":  0
+                                                                   },
+                                                   "rotation":  {
+                                                                    "x":  0,
+                                                                    "y":  0,
+                                                                    "z":  83
+                                                                },
+                                                   "origin":  {
+                                                                  "x":  0.47,
+                                                                  "y":  0,
+                                                                  "z":  0.5
+                                                              },
+                                                   "scale":  3
+                                               },
+                                  "*-potato":  {
+                                                   "translation":  {
+                                                                       "x":  0,
+                                                                       "y":  0,
+                                                                       "z":  0
+                                                                   },
+                                                   "rotation":  {
+                                                                    "x":  97,
+                                                                    "y":  -18,
+                                                                    "z":  -16
+                                                                },
+                                                   "origin":  {
+                                                                  "x":  0.5,
+                                                                  "y":  0.5,
+                                                                  "z":  0.5299
+                                                              },
+                                                   "scale":  2.8
+                                               },
+                                  "*":  {
+                                            "translation":  {
+                                                                "x":  0,
+                                                                "y":  0,
+                                                                "z":  0
+                                                            },
+                                            "rotation":  {
+                                                             "x":  0,
+                                                             "y":  0,
+                                                             "z":  0
+                                                         },
+                                            "origin":  {
+                                                           "x":  0.47,
+                                                           "y":  0,
+                                                           "z":  0.5
+                                                       },
+                                            "scale":  4.3
+                                        }
+                              },
+    "heldRightReadyAnimationByType":  {
+                                          "*-potato":  "holdbothhands",
+                                          "*":  "holdbothhands"
+                                      },
+    "heldTpIdleAnimationByType":  {
+                                      "*-potato":  "holdbothhands",
+                                      "*":  "holdbothhands"
+                                  }
+}

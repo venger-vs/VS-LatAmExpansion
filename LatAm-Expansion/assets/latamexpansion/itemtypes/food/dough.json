@@ -1,0 +1,156 @@
+{
+    "code":  "dough",
+    "class":  "ItemDough",
+    "maxstacksize":  32,
+    "variantgroups":  [
+                          {
+                              "code":  "type",
+                              "states":  [
+                                             "corn",
+                                             "quinoa"
+                                         ]
+                          }
+                      ],
+    "shapebytype":  {
+                        "*-corn":  {
+                                       "base":  "game:item/food/bread/speltbread-dough"
+                                   },
+                        "*-quinoa":  {
+                                         "base":  "game:item/food/bread/amaranthbread-dough"
+                                     }
+                    },
+    "texturesbytype":  {
+                           "*-corn":  {
+                                          "speltbread":  {
+                                                             "base":  "item/food/grain/cornbread"
+                                                         }
+                                      },
+                           "*-quinoa":  {
+                                            "amaranth":  {
+                                                             "base":  "item/food/grain/quinoabread"
+                                                         }
+                                        }
+                       },
+    "creativeinventory":  {
+                              "general":  [
+                                              "*"
+                                          ],
+                              "items":  [
+                                            "*"
+                                        ],
+                              "latamexpansion":  [
+                                                     "*"
+                                                 ]
+                          },
+    "attributes":  {
+                       "displaycaseable":  true,
+                       "shelvable":  true,
+                       "displayable":  {
+                                           "shelf":  {
+                                                         "size":  {
+                                                                      "width":  3.5,
+                                                                      "height":  2,
+                                                                      "length":  5
+                                                                  }
+                                                     }
+                                       },
+                       "bakingProperties":  {
+                                                "temp":  160,
+                                                "levelFrom":  0,
+                                                "levelTo":  0.25,
+                                                "startScaleY":  0.9,
+                                                "endScaleY":  0.95,
+                                                "resultCode":  "bread-{type}-partbaked"
+                                            },
+                       "inPieProperties":  {
+                                               "texture":  "block/food/pie/{type}{bakeLevel}",
+                                               "partType":  "Crust"
+                                           },
+                       "nutritionPropsWhenInMeal":  {
+                                                        "satiety":  240,
+                                                        "foodcategory":  "Grain"
+                                                    }
+                   },
+    "combustibleProps":  {
+                             "meltingPoint":  200,
+                             "meltingDuration":  20,
+                             "smeltedRatio":  1,
+                             "smeltingType":  "bake",
+                             "smeltedStack":  {
+                                                  "type":  "item",
+                                                  "code":  "bread-{type}-charred"
+                                              },
+                             "requiresContainer":  false
+                         },
+    "materialDensity":  200,
+    "guiTransform":  {
+                         "translation":  {
+                                             "x":  0,
+                                             "y":  0,
+                                             "z":  0
+                                         },
+                         "rotation":  {
+                                          "x":  -30,
+                                          "y":  26,
+                                          "z":  180
+                                      },
+                         "origin":  {
+                                        "x":  0.52,
+                                        "y":  0.07,
+                                        "z":  0.5
+                                    },
+                         "scale":  4.9
+                     },
+    "groundTransform":  {
+                            "translation":  {
+                                                "x":  0,
+                                                "y":  0,
+                                                "z":  0
+                                            },
+                            "rotation":  {
+                                             "x":  0,
+                                             "y":  0,
+                                             "z":  1
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0,
+                                           "z":  0.5
+                                       },
+                            "scale":  4
+                        },
+    "tpHandTransform":  {
+                            "translation":  {
+                                                "x":  -0.69,
+                                                "y":  -0.16,
+                                                "z":  -0.53
+                                            },
+                            "rotation":  {
+                                             "x":  88,
+                                             "y":  -85,
+                                             "z":  2
+                                         },
+                            "origin":  {
+                                           "x":  0.5,
+                                           "y":  0.13,
+                                           "z":  0.5
+                                       },
+                            "scale":  0.8
+                        },
+    "transitionableProps":  [
+                                {
+                                    "type":  "Perish",
+                                    "freshHours":  {
+                                                       "avg":  48
+                                                   },
+                                    "transitionHours":  {
+                                                            "avg":  24
+                                                        },
+                                    "transitionedStack":  {
+                                                              "type":  "item",
+                                                              "code":  "game:rot"
+                                                          },
+                                    "transitionRatio":  1
+                                }
+                            ]
+}
